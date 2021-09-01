@@ -1,0 +1,55 @@
+<!-- header -->
+<%- include('include/_header')%>
+
+<main id="site-main">
+    <div class="container upcon">
+      <div class="box-nav d-flex justify-between">
+        <div class="filter">
+          <a href="/"
+            ><i class="fas fa-angle-double-left"></i>All Restaurant</a
+          >
+        </div>
+      </div>
+      <div class="form-title text-center">
+        <h2 class="text-dark">Update Restaurant</h2>
+        <span class="text-light"
+          >Use the below form to Update a Restuarant</span
+        >
+      </div>
+
+      <form method="POST" id="update_rest">
+        <div class="new_rest">
+          <div class="form-group">
+            <label for="restname" class="text-light">Restaurant Name</label>
+            <input type="hidden" name="id" value="<%= rest._id%>">
+            <input
+              type="text"
+              name="restname"
+              value="<%= rest.restname%>"
+              placeholder="Shiv Restaurant"
+            />
+          </div>
+          <div class="form-group">
+            <label for="optime" class="text-light">Opening Time</label>
+            <input type="text" name="optime" value="<%= rest.optime%>" placeholder="10" />
+          </div>
+          <div class="form-group">
+            <label for="cltime" class="text-light">Closing Time</label>
+            <input type="text" name="cltime" value="<%= rest.cltime%>" placeholder="7" />
+          </div>
+          <div class="form-group">
+            <label for="restfood" class="text-light">Food Items</label>
+            <input type="text" name="restfood" value="<%= rest.restfood%>" placeholder="pav bhaji" />
+          </div>
+    
+          <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+          </div>
+        </div>
+      </form>
+     
+    </div>
+  </main>
+
+<!-- footer -->
+<%- include('include/_footer')%>

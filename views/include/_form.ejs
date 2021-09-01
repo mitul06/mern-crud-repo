@@ -1,0 +1,29 @@
+<form action="/api/rest" method="POST" id="add_rest">
+    <div class="new_rest">
+      <div class="form-group">
+        <label for="restname" class="text-light">Restaurant Name</label>
+        <input
+          type="text"
+          name="restname"
+          value=""
+          placeholder="Shiv Restaurant"
+        />
+      </div>
+      <div class="form-group">
+        <label for="optime" class="text-light">Opening Time</label>
+        <input type="text" name="optime" value="" placeholder="10" />
+      </div>
+      <div class="form-group">
+        <label for="cltime" class="text-light">Closing Time</label>
+        <input type="text" name="cltime" value="" placeholder="7" />
+      </div>
+      <div class="form-group">
+        <label for="restfood" class="text-light">Food Items</label>
+        <input type="text" name="restfood" value="" placeholder="pav bhaji" />
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn text-dark update">Save</button>
+      </div>
+    </div>
+  </form>

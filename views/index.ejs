@@ -1,0 +1,32 @@
+<!-- header -->
+<%- include('include/_header')%>
+
+<main id="site-main">
+    <div class="container">
+      <div class="box-nav d-flex justify-between">
+        <a href="/add-rest" class="border-shadow"
+          >New Restaurant <i class="fas fa-hotel"></i
+        ></a>
+      </div>
+
+      <form action="/" method="POST">
+        <table class="table incon">
+          <thead class="thead-dark">
+            <tr>
+              <th>ID</th>
+              <th>Restaurant Name</th>
+              <th>Opening Time</th>
+              <th>Closing Time</th>
+              <th>Food Items</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%- include('include/_show')%>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </main>
+<!-- footer -->
+<%- include('include/_footer')%>
